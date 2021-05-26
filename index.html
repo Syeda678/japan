@@ -1,34 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Document</title>
-</head>
-<body>
-    <header class="header">
-        <div class="nav" id="nav-bar">
-            <a href="#" class="logo">Head.</a>
-            <a href="#">Works</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-            <a class="icon" onclick="burgerMenu">
-                <i class="fa fa-ellipsis-h"></i>
-            </a>
-        </div>
-    </header>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="logo">
+        <h4>
+          <a href="#" class="logo">Head.</a>
+        </h4>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#">Works</a>
+        </li>
+        <li>
+          <a href="#">Services</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+      <div class="burger">
+        <a href="#">
+          <i class="fa fa-ellipsis-h"></i>
+        </a>
+      </div>
+    </nav>
     <main>
-        <div class="text-box">
-            <h1 class="main-title">Japan</h1>
+      <div class="text-box">
+        <h1 class="main-title">Japan</h1>
         <p class="paragraph">
-            Fusce vehicula dolor arcu, sit amet blandit 
-            dolor mollis nec. Donec viverra eleifend lacus, 
-            vitae ullamcor.
+          Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec
+          viverra eleifend lacus, vitae ullamcor.
         </p>
+
+        <!--// open modal //-->
+        <button id="myBtn" class="btn">Learn more..</button>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-box">
+              <h3>More Information:</h3>
+              <p class="modal-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Consequuntur veritatis nihil quae ipsa molestias eveniet rerum
+                neque esse quaerat facilis! Numquam, reprehenderit blanditiis
+                necessitatibus saepe maxime corporis earum! Eligendi dolores eum
+                soluta earum amet eaque numquam vitae impedit fuga architecto
+                aspernatur eos, suscipit asperiores sapiente. Illo illum odio
+                optio vero?
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="image-1"></div>
+      </div>
+      <div class="image-1"></div>
     </main>
-</body>
+
+    <script src="index.js"></script>
+  </body>
 </html>
